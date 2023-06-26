@@ -1,0 +1,32 @@
+.ferramentas-design {
+    padding: 20% 8% 60% 8%;
+    text-align: center;
+}
+
+.ferramentas-design__titulo, .ferramentas-design__container__container-conteudo__titulo {
+    color: var(--cor-azul-escuro);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.ferramentas-design__container__container-conteudo__texto {
+    color: var(--cor-cinza-escuro);
+    line-height: 1.5rem;
+}
+
+.ferramentas-design__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.ferramentas-design__container__container-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.ferramentas-design__imagem {
+    width: 130%;
+    margin: 30px 0;
+}

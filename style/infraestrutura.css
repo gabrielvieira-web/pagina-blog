@@ -1,0 +1,39 @@
+.infraestrutura {
+    color: var(--cor-branco);
+    background-image: url("../images/bg-pattern-circles.svg"), linear-gradient(to bottom, var(--gradiente-azul-escuro)50%, var(--gradiente-azul-claro));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% -257px, bottom;
+    border-radius: 0 100px;
+    padding: 0 8%;
+    text-align: center;
+}
+
+.infraestrutura__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infraestrutura__container__conteudo {
+    position: relative;
+    top: -190px;
+}
+
+.infraestrutura__container__conteudo__titulo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 2.5rem;
+}
+
+.infraestrutura__container__conteudo__texto {
+    line-height: 1.7rem;
+    color: var(--cor-cinza-claro);
+}
+
+.infraestrutura__container__imagem {
+    position: relative;
+    top: -190px;
+    width: 130%;
+}
