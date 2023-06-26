@@ -1,5 +1,5 @@
 .ferramentas-gratuitas {
-    padding: 20% 8% 20% 8%;
+    padding: 20% 0 20% 0;
     text-align: center;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .ferramentas-gratuitas__imagem {
-    width: 155%;
+    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -18,6 +18,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    padding: 0 8%;
 }
 
 .ferramentas-gratuitas__campo-conteudo__titulo {
