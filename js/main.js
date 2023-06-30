@@ -57,6 +57,7 @@ categorias.forEach((categoria) => categoria.addEventListener("click", evento => 
 
 menu.addEventListener("click", evento => {
     if (evento.target.src == imagemMenuHamburguer) {
+        console.log("clicou")
         menu.classList.add("close");
 
         menu.src = imagemMenuClose;
