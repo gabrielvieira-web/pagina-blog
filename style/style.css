@@ -35,7 +35,12 @@
     --font-secundaria: 'Ubuntu', sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     height: 100%;
     font-family: var(--font-primaria);
+    overflow-x: hidden;
 }

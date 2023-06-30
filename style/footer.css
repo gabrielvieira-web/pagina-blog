@@ -39,3 +39,28 @@
 .rodape__lista__item__link:hover {
     text-decoration: underline;
 }
+ 
+@media screen and (min-width: 1200px) {
+    .rodape {
+        flex-direction: row;
+        padding: 4% 0 4% 10%;
+        align-items: start;
+        gap: 15%;
+        text-align: left;
+    }
+
+    .rodape__imagem {
+        width: 110px;
+        margin-bottom: 0;
+    }
+
+    .rodape__lista {
+        margin-bottom: 0;
+    }
+
+    .rodape__lista__categoria {
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+        padding-top: 12px;
+    }
+}

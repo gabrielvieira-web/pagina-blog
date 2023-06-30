@@ -10,38 +10,57 @@
 </head>
 <body>
     <header class="cabecalho">
-
-        <nav class="cabecalho__navegacao">
-            <img src="images/logo.svg" alt="Logo" class="cabecalho__navegacao__imagem-logo">
-            <img src="images/icon-hamburger.svg" alt="icone menu hamburguer" class="cabecalho__navegacao__imagem-hamburguer">
-            
-            <!-- <ul class="cabecalho__navegacao__lista">
-                <li class="cabecalho__navegacao__lista__categoria">Product</li>
-                <img src="images/icon-arrow-light.svg" alt="icone de seta" class="cabecalho__navegacao__lista__icone">
-                <li class="cabecalho__navegacao-item"><a href="#" class="cabecalho__navegacao__item__link">1</a></li>
-                <li class="cabecalho__navegacao-item"><a href="#" class="cabecalho__navegacao__item__link">2</a></li>
-                <li class="cabecalho__navegacao-item"><a href="#" class="cabecalho__navegacao__item__link">3</a></li>
-            </ul>
-            <ul class="cabecalho__navegacao__lista">
-                <li class="cabecalho__navegacao__lista__categoria">Company</li>
-                <img src="images/icon-arrow-light.svg" alt="icone de seta" class="cabecalho__navegacao__lista__icone">
-                <li class="cabecalho__navegacao-item"><a href="#" class="cabecalho__navegacao__item__link">1</a></li>
-                <li class="cabecalho__navegacao-item"><a href="#" class="cabecalho__navegacao__item__link">2</a></li>
-                <li class="cabecalho__navegacao-item"><a href="#" class="cabecalho__navegacao__item__link">3</a></li>
-            </ul>
-            <ul class="cabecalho__navegacao__lista">
-                <li class="cabecalho__navegacao__lista__categoria">Connect</li>
-                <img src="images/icon-arrow-light.svg" alt="icone de seta" class="cabecalho__navegacao__lista__icone">
-                <li class="cabecalho__navegacao-item"><a href="#" class="cabecalho__navegacao__item__link">1</a></li>
-                <li class="cabecalho__navegacao-item"><a href="#" class="cabecalho__navegacao__item__link">2</a></li>
-                <li class="cabecalho__navegacao-item"><a href="#" class="cabecalho__navegacao__item__link">3</a></li>
-            </ul> 
-
-            <div class="cabecalho__campo-cadastro">
-                <a href="#" class="cabecalho__campo-cadastro__link-login">Login</a>
-                <a href="#" class="cabecalho__campo-cadastro__link-sing-up">Sing Up</a>
-            </div> -->
-        </nav>
+        <div class="cabecalho__container">
+            <div class="cabecalho__container-menu">
+                <img src="images/logo.svg" alt="Logo" class="cabecalho__container-menu__imagem-logo">
+                <img src="images/icon-hamburger.svg" alt="icone menu" class="cabecalho__container-menu__imagem-menu" data-menu>
+            </div>
+            <nav class="cabecalho__navegacao" data-navegacao>
+                <ul class="cabecalho__navegacao__lista">
+                    <div class="cabecalho__navegacao__lista__container-categoria" data-campo-categoria>
+                        <li class="cabecalho__navegacao__lista__categoria" data-categoria>Product</li>
+                        <img src="images/icon-arrow-dark.svg" alt="icone de seta" class="cabecalho__navegacao__lista__icone-dark" data-arrow-dark>
+                        <img src="images/icon-arrow-light.svg" alt="icone de seta" class="cabecalho__navegacao__lista__icone-light" data-arrow-light>
+                    </div>
+                    <div class="cabecalho__navegacao__lista__container-itens" data-campo-itens>
+                        <li class="cabecalho__navegacao__item"><a href="#" class="cabecalho__navegacao__item__link">Overview</a></li>
+                        <li class="cabecalho__navegacao__item"><a href="#" class="cabecalho__navegacao__item__link">Pricing</a></li>
+                        <li class="cabecalho__navegacao__item"><a href="#" class="cabecalho__navegacao__item__link">Marketplace</a></li>
+                        <li class="cabecalho__navegacao__item"><a href="#" class="cabecalho__navegacao__item__link">Features</a></li>
+                        <li class="cabecalho__navegacao__item"><a href="#" class="cabecalho__navegacao__item__link">Integrations</a></li>
+                    </div>
+                </ul>
+                <ul class="cabecalho__navegacao__lista" data-lista>
+                    <div class="cabecalho__navegacao__lista__container-categoria" data-campo-categoria>
+                        <li class="cabecalho__navegacao__lista__categoria" data-categoria>Company</li>
+                        <img src="images/icon-arrow-dark.svg" alt="icone de seta" class="cabecalho__navegacao__lista__icone-dark" data-arrow-dark>
+                        <img src="images/icon-arrow-light.svg" alt="icone de seta" class="cabecalho__navegacao__lista__icone-light" data-arrow-light>
+                    </div>
+                    <div class="cabecalho__navegacao__lista__container-itens" data-campo-itens>
+                        <li class="cabecalho__navegacao__item"><a href="#" class="cabecalho__navegacao__item__link">About</a></li>
+                        <li class="cabecalho__navegacao__item"><a href="#" class="cabecalho__navegacao__item__link">Team</a></li>
+                        <li class="cabecalho__navegacao__item"><a href="#" class="cabecalho__navegacao__item__link">Blog</a></li>
+                        <li class="cabecalho__navegacao__item"><a href="#" class="cabecalho__navegacao__item__link">Careers</a></li>
+                    </div>
+                </ul>
+                <ul class="cabecalho__navegacao__lista" data-lista>
+                    <div class="cabecalho__navegacao__lista__container-categoria" data-campo-categoria>
+                        <li class="cabecalho__navegacao__lista__categoria" data-categoria>Connect</li>
+                        <img src="images/icon-arrow-dark.svg" alt="icone de seta" class="cabecalho__navegacao__lista__icone-dark" data-arrow-dark>
+                        <img src="images/icon-arrow-light.svg" alt="icone de seta" class="cabecalho__navegacao__lista__icone-light" data-arrow-light>
+                    </div>
+                    <div class="cabecalho__navegacao__lista__container-itens" data-campo-itens>
+                        <li class="cabecalho__navegacao__item"><a href="#" class="cabecalho__navegacao__item__link">Contact</a></li>
+                        <li class="cabecalho__navegacao__item"><a href="#" class="cabecalho__navegacao__item__link">Newsletter</a></li>
+                        <li class="cabecalho__navegacao__item"><a href="#" class="cabecalho__navegacao__item__link">Linkedin</a></li>
+                    </div>
+                </ul>
+                <div class="cabecalho__campo-cadastro">
+                    <a href="#" class="cabecalho__campo-cadastro__link-login">Login</a>
+                    <a href="#" class="cabecalho__campo-cadastro__link-sign-up">Sign Up</a>
+                </div>
+            </nav>
+        </div>
 
         <h1 class="cabecalho__titulo">A modern publishing platform</h1>
         <p class="cabecalho__texto">Grow your audience and build your online brand</p>
@@ -61,12 +80,14 @@
             <div class="ferramentas-design__container__container-conteudo">
                 <h3 class="ferramentas-design__container__container-conteudo__titulo">Introduction an extensible editor</h3>
                 <p class="ferramentas-design__container__container-conteudo__texto">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
-
                 <h3 class="ferramentas-design__container__container-conteudo__titulo">Robust content management</h3>
                 <p class="ferramentas-design__container__container-conteudo__texto">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories , sections, format, or flow. With this functionality, you're in full control.</p>
             </div>
-
-            <img src="images/illustration-editor-mobile.svg" alt="estatistícas" class="ferramentas-design__imagem">
+            
+            <div class="ferramentas-design__container__container-imagens">
+                <img src="images/illustration-editor-mobile.svg" alt="estatistícas" class="ferramentas-design__imagem-mobile">
+                <img src="images/illustration-editor-desktop.svg" alt="estatistícas" class="ferramentas-design__imagem-desktop">
+            </div>
         </div>
 
     </section>
@@ -83,17 +104,20 @@
     </section>
 
     <section class="ferramentas-gratuitas">
-        <div class="ferramentas-gratuitas__container">
-            <img src="images/illustration-laptop-mobile.svg" alt="Notebook mostrando site" class="ferramentas-gratuitas__imagem">
 
-            <div class="ferramentas-gratuitas__campo-conteudo">
-                <h3 class="ferramentas-gratuitas__campo-conteudo__titulo">Free, open, simple</h3>
-                <p class="ferramentas-gratuitas__campo-conteudo__texto">Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
-
-                <h3 class="ferramentas-gratuitas__campo-conteudo__titulo">Powerful tooling</h3>
-                <p class="ferramentas-gratuitas__campo-conteudo__texto">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
-            </div>
+        <div class="ferramentas-gratuitas__campo-imagens">
+            <img src="images/illustration-laptop-mobile.svg" alt="Notebook mostrando site" class="ferramentas-gratuitas__imagem-mobile">
+            <img src="images/illustration-laptop-desktop.svg" alt="Notebook mostrando site" class="ferramentas-gratuitas__imagem-desktop">
         </div>
+
+        <div class="ferramentas-gratuitas__campo-conteudo">
+            <h3 class="ferramentas-gratuitas__campo-conteudo__titulo">Free, open, simple</h3>
+            <p class="ferramentas-gratuitas__campo-conteudo__texto">Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+
+            <h3 class="ferramentas-gratuitas__campo-conteudo__titulo">Powerful tooling</h3>
+            <p class="ferramentas-gratuitas__campo-conteudo__texto">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+        </div>
+    
     </section>
 
     <footer class="rodape">
@@ -124,5 +148,7 @@
         </ul>
 
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
