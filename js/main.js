@@ -9,6 +9,24 @@ const arrowDark = document.querySelectorAll("[data-arrow-dark]");
 const arrowLight = document.querySelectorAll("[data-arrow-light]");
 const campoDeItens = document.querySelectorAll("[data-campo-itens]");
 
+console.log("carregou javascript")
+
+menu.addEventListener("click", evento => {
+    if (evento.target.src == imagemMenuHamburguer) {
+        console.log("clicou")
+        menu.classList.add("close");
+
+        menu.src = imagemMenuClose;
+        campoNavegacao.style.display = 'block';
+
+    } else if (evento.target.src == imagemMenuClose) {
+        menu.classList.remove("close");
+
+        menu.src = imagemMenuHamburguer;
+        campoNavegacao.style.display = 'none';
+    }
+});
+
 categorias.forEach((categoria) => categoria.addEventListener("click", evento => {
 
     if (evento.target.innerHTML == 'Product') {
@@ -18,6 +36,7 @@ categorias.forEach((categoria) => categoria.addEventListener("click", evento => 
             arrowDark[0].classList.remove("arrow-dark");
             arrowLight[0].classList.remove("arrow-light");
         } else if (campoDeItens[0].style.display == '' || campoDeItens[0].style.display == 'none') {
+            console.log("clicou")
             campoDeItens[0].style.display = 'block';
             arrowDark[0].classList.add("arrow-dark");
             arrowLight[0].classList.add("arrow-light");
@@ -54,19 +73,3 @@ categorias.forEach((categoria) => categoria.addEventListener("click", evento => 
     };
 
 }));
-
-menu.addEventListener("click", evento => {
-    if (evento.target.src == imagemMenuHamburguer) {
-        console.log("clicou")
-        menu.classList.add("close");
-
-        menu.src = imagemMenuClose;
-        campoNavegacao.style.display = 'block';
-
-    } else if (evento.target.src == imagemMenuClose) {
-        menu.classList.remove("close");
-
-        menu.src = imagemMenuHamburguer;
-        campoNavegacao.style.display = 'none';
-    }
-});
