@@ -9,11 +9,13 @@ const arrowDark = document.querySelectorAll("[data-arrow-dark]");
 const arrowLight = document.querySelectorAll("[data-arrow-light]");
 const campoDeItens = document.querySelectorAll("[data-campo-itens]");
 
-console.log("carregou javascript")
+console.log(menu)
 
-menu.addEventListener("click", evento => {
+menu.addEventListener("click", (evento) => {
+    console.log("clicou")
+    console.log(evento.target.src)
+
     if (evento.target.src == imagemMenuHamburguer) {
-        console.log("clicou")
         menu.classList.add("close");
 
         menu.src = imagemMenuClose;
@@ -27,7 +29,7 @@ menu.addEventListener("click", evento => {
     }
 });
 
-categorias.forEach((categoria) => categoria.addEventListener("click", evento => {
+categorias.forEach((categoria) => categoria.addEventListener("click", (evento) => {
 
     if (evento.target.innerHTML == 'Product') {
         
