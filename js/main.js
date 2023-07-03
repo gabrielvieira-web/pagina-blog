@@ -1,7 +1,7 @@
 const menu = document.querySelector("[data-menu]");
 const campoNavegacao = document.querySelector("[data-navegacao]");
-const imagemMenuClose = "http://127.0.0.1:5500/images/icon-close.svg";
-const imagemMenuHamburguer = "http://127.0.0.1:5500/images/icon-hamburger.svg";
+const imagemMenuClose = "https://pagina-blog-dlnftxype-gabrielvieira-web.vercel.app/images/icon-close.svg";
+const imagemMenuHamburguer = "https://pagina-blog-dlnftxype-gabrielvieira-web.vercel.app/images/icon-hamburger.svg";
 
 const campoDeCategorias = document.querySelectorAll("[data-campo-categoria]");
 const categorias = document.querySelectorAll("[data-categoria]");
@@ -9,11 +9,9 @@ const arrowDark = document.querySelectorAll("[data-arrow-dark]");
 const arrowLight = document.querySelectorAll("[data-arrow-light]");
 const campoDeItens = document.querySelectorAll("[data-campo-itens]");
 
-console.log(menu)
-
 menu.addEventListener("click", (evento) => {
-    console.log("clicou")
-    console.log(evento.target.src)
+
+    console.log(evento)
 
     if (evento.target.src == imagemMenuHamburguer) {
         menu.classList.add("close");
