@@ -1,7 +1,6 @@
 const menu = document.querySelector("[data-menu]");
 const campoNavegacao = document.querySelector("[data-navegacao]");
 
-
 const campoDeCategorias = document.querySelectorAll("[data-campo-categoria]");
 const categorias = document.querySelectorAll("[data-categoria]");
 const arrowDark = document.querySelectorAll("[data-arrow-dark]");
@@ -23,7 +22,7 @@ menu.addEventListener("click", (evento) => {
         menu.src = srcImagemMenu.replace("close", "hamburger");
         campoNavegacao.style.display = 'none';
     }
-    
+
 });
 
 categorias.forEach((categoria) => categoria.addEventListener("click", (evento) => {
