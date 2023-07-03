@@ -1,7 +1,6 @@
 const menu = document.querySelector("[data-menu]");
 const campoNavegacao = document.querySelector("[data-navegacao]");
-const imagemMenuClose = "https://pagina-blog-dlnftxype-gabrielvieira-web.vercel.app/images/icon-close.svg";
-const imagemMenuHamburguer = "https://pagina-blog-dlnftxype-gabrielvieira-web.vercel.app/images/icon-hamburger.svg";
+
 
 const campoDeCategorias = document.querySelectorAll("[data-campo-categoria]");
 const categorias = document.querySelectorAll("[data-categoria]");
@@ -11,20 +10,20 @@ const campoDeItens = document.querySelectorAll("[data-campo-itens]");
 
 menu.addEventListener("click", (evento) => {
 
-    console.log(evento)
+    let srcImagemMenu = evento.target.currentSrc;
 
-    if (evento.target.src == imagemMenuHamburguer) {
+    if (srcImagemMenu.indexOf("hamburger") >= 0) {
         menu.classList.add("close");
 
-        menu.src = imagemMenuClose;
+        menu.src = srcImagemMenu.replace("hamburger", "close");
         campoNavegacao.style.display = 'block';
-
-    } else if (evento.target.src == imagemMenuClose) {
+    } else {
         menu.classList.remove("close");
 
-        menu.src = imagemMenuHamburguer;
+        menu.src = srcImagemMenu.replace("close", "hamburger");
         campoNavegacao.style.display = 'none';
     }
+    
 });
 
 categorias.forEach((categoria) => categoria.addEventListener("click", (evento) => {
